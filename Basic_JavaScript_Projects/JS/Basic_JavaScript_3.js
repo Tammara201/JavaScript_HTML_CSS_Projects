@@ -16,7 +16,7 @@ function subtraction_Function() { //display 6-5=1
 
 function multiplication_Function() { //display 3X4=12
     var multiplication = 3*4;
-    document.getElementById("Multiplication").innerHTML = "3X4=" + multiplication;
+    document.getElementById("Multiplication").innerHTML = "3x4=" + multiplication;
 }
 
 function division_Function() { //display 20/5=4
