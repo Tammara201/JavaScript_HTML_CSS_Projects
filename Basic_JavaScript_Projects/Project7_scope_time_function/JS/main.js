@@ -11,29 +11,17 @@ add_Numbers_1();//prints total
 add_Numbers_2();//prints total
 
 
-//Local variable
+//Local variable and console.log
 function add_Numbers_3() { //defines number function 3
     var Y = 5;
     document.write(30 + Y + "<br>");//add variable Y to 30
 }
 
 function add_Numbers_4() { //defines number function 4
-    document.write(Y + 120 + "<br>");//will not add variable Y
+    console.log(Y + 120 + "<br>");//will not add variable Y
 }
 add_Numbers_3();//prints total
 add_Numbers_4();//will not print
-
-//Console.log
-var Z = 10; 
-function add_Numbers_5() { //defines number function 5
-    console.log(20 + Z + "<br>");//adds variable Z to 20
-}
-
-function add_Numbers_6() { //defines number function 6
-    console.log(A + 100 + "<br>");//adds variable Z to 100
-}
-add_Numbers_5();//prints total
-add_Numbers_6();//prints total
 
 
 //print message when if stmt conditions met
