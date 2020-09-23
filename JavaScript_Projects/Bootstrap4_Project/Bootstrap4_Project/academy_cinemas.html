@@ -39,7 +39,26 @@
                 <button type="submit" class=" btn btn-primary my-2 my-sm-0 text-light" data-toggle="tooltip" data-placement="bottom" title="How can we help?">
                   Search
                 </button>
-              </form>              
+              </form>
+              
+               <!--popup login contact form-->
+               <button class="open-button" onclick="openForm()">Login here</button>
+
+               <div class="form-popup" id="contactForm">
+                 <form class="form-container">
+                   <h1>Login</h1>
+               
+                   <label for="email"><b>Email</b></label>
+                   <input type="text" placeholder="Enter Email" name="email" required>
+               
+                   <label for="psw"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="psw" required>
+               
+                   <button type="submit" class="btn">Login</button>
+                   <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                 </form>
+               </div>              
+
             </div>
           </nav>
           <!--END NAV-->          
@@ -199,7 +218,8 @@
               </div>
               <div class="modal-body">
                 
-                <form name="myForm" action="action_page.php"  onsubmit="validateForm()" method="post">
+                <!--Calls function to verify all required info has been added-->
+                <form name="myForm" onsubmit="validateForm()" method="post">
                   <fieldset class="form-group">
                     <label for="firstname">First Name:</label>
                     <input type="text" class="form-control" id="firstname" placeholder="First Name...">                   
@@ -219,23 +239,38 @@
                   <fieldset class="form-group">
                     <label for="phone">Phone:</label>
                     <input type="text" class="form-control" id="phone" placeholder="Phone...">
-                  </fieldset>               
+                  </fieldset>
+                  <!--button to verify data in required fields--> 
+                  <button class="btn btn-primary">Save changes</button> 
+                  <!--button to close window-->
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>          
                 </form>                
 
               </div>
-              <div class="modal-footer">
-                <!--button to verify data in required fields-->
-                <input type="submit" value="Save changes" class="btn btn-primary"
-               >
-                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+              <div class="modal-footer"> 
+               
                 
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>            
           </div>
         </div>
         <!--end form modal-->
 
+
+        <!--slideshow-->
+        <div id="slideshow">
+          <div>
+            <img src="./img/beautyandthebeast.jpg">
+          </div>
+          <div>
+            <img src="./img/kongskullisland.jpg">
+          </div>
+          <div>
+            <img src="./img/ghostintheshell.jpg">
+          </div>
+          <div>Come see our latest releases</div>
+        </div>
+        <!-- end slideshow-->
 
           <!--footer-->
           <div class="container my-5">
