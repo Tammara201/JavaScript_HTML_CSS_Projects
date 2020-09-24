@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Tammara Waterman</title>
+		  <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+	</head>
+		  
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- openForm function runs when we click Contact on the nav bar -->
+	</div>
+
+<!-- Home -->
+	<div id="Home">
+		<br> <!-- add space between navbar and first heading -->
+		<br>
+		
+<!-- Video -->
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="stylesheet/video/typing.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Tammara Waterman's Portfolio</h1>
+			<p> 
+			  <strong>
+					<center>
+						<q>Imagination is more important than knowledge. For knowlede is limited, whereas
+                        <br>imagination embraces the entire world, stimulating progress, giving birth to evolution.						
+                        </q>	
+                        <br>-Albert Einstein<br>
+                        <br>
+                        Welcome to my portfolio website.<br>
+                        <br>Thank you for stopping by and I hope to hear from you soon!  
+					</center>	
+			  </strong>				
+			</p> 
+	</div>
+
+<!-- Slideshow section -->
+  <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="stylesheet/images/Tdub.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="stylesheet/images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 6</div>
+            <img class="Slide_Show_Images" src="stylesheet/images/Python.png" style="width:100%">
+              <div class="text">the popular programming language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 6</div>
+            <img class="Slide_Show_Images" src="stylesheet/images/C_Sharp_and_Dot_NET.png" style="width:100%">
+              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+
+		<div class="mySlides fade">
+	      <div class="Slide_Number">5 / 6</div>
+			<img class="Slide_Show_Images" src="stylesheet/images/SQL_and_Database.jpg" style="width:100%">
+              <div class="text">back end development, databases and SQL.</div>
+			</div>
+
+		<div class="mySlides fade">
+		  <div class="Slide_Number">6 / 6</div>
+			<img class="Slide_Show_Images" src="stylesheet/images/Coding_1.jpg" style="width:100%">
+			  <div class="text"> 
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- About section -->
+  <div class="Row" id="About"> 
+	<div class="Column_2"> <!-- Left column -->
+	  <img src="stylesheet/images/Development.jpg" alt="Laptop">
+	</div>
+  
+	<div class="Column_1"> <!-- Right column -->
+	  <h1>About</h1>
+      <p>With 30 years experience in the tech industry and a recent graduate of The Tech Academy, I am looking forward to this new endeavor!<br><br>
+        As a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+        Software Developer Boot Camp, I've been trained in the following web and programming languages: 
+        HTML, CSS, JavaScript, SQL, C# and more. <br><br>
+        I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+	</div>
+  </div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h1>GitHub</h1>
+            <p>Visit my GitHub profile to view my coding project.<br>
+				<center><a href="https://github.com/Tammara201" target="_blank">Link to my GitHub</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/Tammara201" target="_blank"><img src="stylesheet/images/github.png" alt="GitHub"></a>
+		</div>
+	</div>
+</div>
+
+<!-- Contact section -->
+  <div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/waterman2712@gmail.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
+	
+<!-- Footer section -->	
+	<footer>
+	  <p>
+	    <center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+      </p>
+	</footer>
+
+	<script src="js/portfolio.js"></script>
+	
+</body>
+</html>
